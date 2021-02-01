@@ -209,7 +209,7 @@
 			SpaceHero, 4.0,
 			Corvette, 3.0,
 			Bomber, 5.0,
-			Fighter, 2.0
+			Fighter, 2.0,
 		</Attack_Priorities>
 		<Property_Exclusions>NotOpportunityTarget</Property_Exclusions>
 		<Unit_Exclusions>

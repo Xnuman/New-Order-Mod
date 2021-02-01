@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Victor_Strang_Data>
+	<UniqueUnit Name="Conqueror_SD_Strang">
+		<Variant_Of_Existing_Type>Star_Destroyer_NO_Fighters</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Text_ID>TEXT_UNIT_HERO_VICTOR_STRANG_CONQUEROR</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_HERO_VICTOR_STRANG </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_victor_strang.tga</Icon_Name>
+        <Ranking_In_Category>5</Ranking_In_Category>
+		<Neutralization_Cost>2000.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+		<Population_Value>18</Population_Value>
+		<CategoryMask> Capital | AntiFrigate | AntiCapital | SpaceHero </CategoryMask>
+		<Space_Model_Name>ev_conqueror.alo</Space_Model_Name>
+		
+		<HardPoints>
+			HP_Conqueror_Facing,
+			<!--HP_ISD_I_New_00,
+			HP_ISD_I_New_01,-->
+			HP_ISD_I_New_02,
+			HP_ISD_I_New_03,
+			HP_ISD_I_New_04,
+			HP_ISD_I_New_05,
+			<!--HP_ISD_I_New_06,
+			HP_ISD_I_New_07,-->
+			HP_ISD_I_New_08,
+			HP_ISD_I_New_09,
+			HP_ISD_I_New_10,
+			HP_ISD_I_New_11,
+			HP_ISD_I_New_100,
+			HP_ISD_I_New_101,
+			HP_ISD_I_New_102,
+			HP_ISD_I_New_103,
+			HP_ISD_I_New_104,
+			HP_ISD_I_New_105,
+			HP_ISD_I_New_106,
+			HP_ISD_I_New_107
+		</HardPoints>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Conqueror_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>10</Recharge_Seconds>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<SFXEvent_Target_Ability> EHD_Death_Star_2_Activate </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Death_Star_2_Fire </SFXEvent_Special_Ability_Loop>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Conqueror_Super_Laser_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Capital | Frigate | Structure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+                <!-- <Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect> -->
+                <Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+	            <Activation_Max_Range>20000</Activation_Max_Range>
+
+				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
+				<Damage_Per_Frame>3000</Damage_Per_Frame>			
+				<Fire_Frame>60</Fire_Frame>
+				<Attack_Anim_Sub_Index>0</Attack_Anim_Sub_Index>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>5</Num_Anim_Frames>
+				<Line_Width>10</Line_Width>
+				<Line_Color>0 237 119 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0</Fire_Delay>
+				<Fire_Continuation>0.1</Fire_Continuation>
+			</Super_Laser_Ability>
+		</Abilities>
+	</UniqueUnit>
+</Victor_Strang_Data>

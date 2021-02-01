@@ -1,20 +1,13 @@
 <?xml version="1.0"?>
-
-<TIE_Defender_Files>
-
-
-
-<!-- **** BASE SHIP INFORMATION **** -->
-
+<TIE_Defender_Data>
 	<SpaceUnit Name="TIE_Defender">
-
 		<Text_ID>TEXT_UNIT_TIE_DEFENDER</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
-		<Space_Model_Name>EV_TIE_DEFENDER.ALO</Space_Model_Name>
+		<Space_Model_Name>imp_tie_defender.ALO</Space_Model_Name>
 		<Icon_Name>i_button_EV_TIE_Defender.tga</Icon_Name>
 
-		<Scale_Factor>0.243</Scale_Factor>
+		<Scale_Factor>1.0</Scale_Factor>
 		<Select_Box_Scale>50</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
 		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
@@ -214,4 +207,4 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 		<Population_Value>2</Population_Value>
 	</Squadron>
-</TIE_Defender_Files>
+</TIE_Defender_Data>

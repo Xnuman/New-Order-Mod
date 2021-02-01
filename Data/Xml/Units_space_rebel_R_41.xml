@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
-
-
-<R41_Fighter_Data>
-	<SpaceUnit Name="R41">
+<R_41_Data>
+	<SpaceUnit Name="R_41">
 		<Text_ID>TEXT_UNIT_R41</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_R41</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
@@ -131,7 +129,7 @@
 		<Tactical_Bribe_Cost>200</Tactical_Bribe_Cost>
 	</SpaceUnit>
 
-	<Squadron Name="R41_Squadron">
+	<Squadron Name="R_41_Squadron">
 		<Text_ID>TEXT_UNIT_R41_SQUADRON</Text_ID>
 		<GUI_Row> 0 </GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
@@ -152,9 +150,9 @@
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
-		<Squadron_Units>R41, R41, R41, R41</Squadron_Units>
-		<Squadron_Units>R41, R41, R41, R41</Squadron_Units>
-		<Squadron_Units>R41, R41, R41, R41</Squadron_Units>
+		<Squadron_Units>R_41, R_41, R_41, R_41</Squadron_Units>
+		<Squadron_Units>R_41, R_41, R_41, R_41</Squadron_Units>
+		<Squadron_Units>R_41, R_41, R_41, R_41</Squadron_Units>
 		<Max_Squad_Size>12</Max_Squad_Size>
 		<Squadron_Offsets>150.0,0.0,0.0</Squadron_Offsets>
 		<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
@@ -200,4 +198,4 @@
 		<Population_Value>1</Population_Value>
 		<Score_Cost_Credits>770</Score_Cost_Credits>
 	</Squadron>
-</R41_Fighter_Data>
+</R_41_Data>

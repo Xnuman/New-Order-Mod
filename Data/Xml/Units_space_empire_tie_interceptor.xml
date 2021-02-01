@@ -1,22 +1,14 @@
 <?xml version="1.0"?>
-
-
 <TIE_Interceptor_Files>
-
-
-<!-- **** BASE SHIP INFORMATION **** -->
-
-
 	<SpaceUnit Name="TIE_Interceptor">
-
 		<Text_ID>TEXT_UNIT_TIE_INTERCEPTOR</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_INTERCEPTOR</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
-		<Space_Model_Name>EV_TIE_INTERCEPTOR.ALO</Space_Model_Name>
+		<Space_Model_Name>imp_tie_interceptor.ALO</Space_Model_Name>
 		<Icon_Name>i_button_EV_TIE_Interceptor.tga</Icon_Name>
 
-		<Scale_Factor>0.2744</Scale_Factor>
-		<Select_Box_Scale>70</Select_Box_Scale>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>30</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
 
 		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
@@ -24,7 +16,7 @@
 		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
 		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
 		<Mass>0.985</Mass>
-		<Max_Speed>3.171</Max_Speed>
+		<Max_Speed>3.14</Max_Speed>
 		<Min_Speed>1.0</Min_Speed>
 		<Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
 		<Max_Lift>4</Max_Lift>
@@ -45,7 +37,7 @@
 		<Energy_Capacity>500</Energy_Capacity>
 		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
 		<Ship_Class>fighter</Ship_Class>
-		<Armor_Type> Armor_Fighter </Armor_Type>
+		<Armor_Type> Armor_S00 </Armor_Type>
 		<Formation_Priority>1</Formation_Priority>
 		<Is_Escort>Yes</Is_Escort>
 		<Is_Bomber>no</Is_Bomber>
@@ -58,31 +50,18 @@
 		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Damage>60</Damage>
-
-		<Projectile_Types>Proj_Ship_Fighter_Laser_Cannon_Heavy_Green</Projectile_Types>
-		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.0001</Projectile_Fire_Pulse_Delay_Seconds>
-		<Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
-		
-		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Corvette, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Frigate, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Capital, 1.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Super, 1.0 </Fire_Inaccuracy_Distance>
-
-		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
-		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<HardPoints>
+			HP_TIE_in_New_00,
+			HP_TIE_in_New_01
+		</HardPoints>
 
 		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
 		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1100.0</Targeting_Max_Attack_Distance>
+		<Targeting_Max_Attack_Distance>630.0</Targeting_Max_Attack_Distance>
 		<Death_Explosions>Fighter_Explosion_Space_Empire</Death_Explosions>
 		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
 		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
 
-		<SFXEvent_Fire> Unit_TIE_Fighter_Fire </SFXEvent_Fire>
 		<SFXEvent_Select> Unit_Select_Tie_Interceptor </SFXEvent_Select>
 		<SFXEvent_Move> Unit_Move_Tie_Interceptor </SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Interceptor</SFXEvent_Fleet_Move>
@@ -122,7 +101,7 @@
 		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
 		<Minimum_Follow_Distance>60.0</Minimum_Follow_Distance>
 		<Create_Team>Yes</Create_Team>
-		<AI_Combat_Power>88</AI_Combat_Power>
+		<AI_Combat_Power>18</AI_Combat_Power>
 		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
 		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
 		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
@@ -139,10 +118,7 @@
 		<Strafe_Distance>400.0</Strafe_Distance>
 		<Population_Value>0</Population_Value>
 	</SpaceUnit>
-
-
-<!-- **** SQUADRON INFORMATION **** -->
-
+	
 	<Squadron Name="TIE_Interceptor_Squadron">
 		<Text_ID>TEXT_UNIT_TIE_INTERCEPTOR_SQUADRON</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_INTERCEPTOR</Encyclopedia_Text>
@@ -154,8 +130,8 @@
 		<Formation_Priority>1</Formation_Priority>
 		<Is_Escort>Yes</Is_Escort>
 		<Is_Bomber>no</Is_Bomber>
-		<Autoresolve_Health>192</Autoresolve_Health>
-		<Damage>720</Damage>
+		<Autoresolve_Health>180</Autoresolve_Health>
+		<Damage>2880</Damage>
 		<Affiliation>Empire</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Build_Cost_Credits>510</Build_Cost_Credits>
@@ -203,7 +179,7 @@
 		<Tactical_Bribe_Cost>502</Tactical_Bribe_Cost>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>220</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>

@@ -55,6 +55,21 @@
 		<Death_SFXEvent_Start_Die> Planet_Death_SFX </Death_SFXEvent_Start_Die>
 		<Death_By_TSW_Replacements> Destroyed_Planet_Remains_Part_1, Destroyed_Planet_Remains_Part_2 </Death_By_TSW_Replacements>
 	</SpaceProp>
+	
+	<SpaceProp Name="Kuat_Backdrop_Mega">
+		<Text_ID />
+		<Space_Model_Name>w_planet_kuat.alo</Space_Model_Name>
+		<Scale_Factor>38.0</Scale_Factor>
+		<Behavior> IDLE, DUMMY_SPECIAL_WEAPON_SOURCE, DUMMY_TACTICAL_SUPER_WEAPON_TARGET </Behavior>
+		<In_Background> Yes </In_Background>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<!-- When destroyed by tactical super weapon - Death Star -->
+		<Death_Explosions> Tactical_Planet_Explode_300x_Particle </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Planet_Death_SFX </Death_SFXEvent_Start_Die>
+		<Death_By_TSW_Replacements> Destroyed_Planet_Remains_Part_1, Destroyed_Planet_Remains_Part_2 </Death_By_TSW_Replacements>
+	</SpaceProp>
 
 
 	<!-- PLANET BACKDROPS -->
@@ -1597,7 +1612,7 @@
 		<Space_Obstacle_Radius> 130 </Space_Obstacle_Radius>
 		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
 		<Space_Layer> StaticObject </Space_Layer>
-		<Is_Visible_On_Radar> True </Is_Visible_On_Radar>	
+		<Is_Visible_On_Radar> False </Is_Visible_On_Radar>	
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
 		<Radar_Icon_Size>0.18  0.18</Radar_Icon_Size>

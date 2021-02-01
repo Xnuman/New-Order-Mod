@@ -8,22 +8,23 @@
 		<Select_Box_Scale>1000</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-150</Select_Box_Z_Adjust>
 		<Mass>0.995</Mass>
-		<Scale_Factor>0.51</Scale_Factor>
+		<Scale_Factor>1.02</Scale_Factor>
 		<Damage>780</Damage>
 		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
 		<Ranking_In_Category>5</Ranking_In_Category>
-		<Max_Speed>1.714</Max_Speed>
-		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Speed>1.43</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.15</Stopped_Rate_Of_Turn>
 		<MovementClass> Space </MovementClass>
 		<Space_Layer> Capital </Space_Layer>
 		<Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
 		<OverrideAcceleration> .02 </OverrideAcceleration>
 		<OverrideDeceleration> .02 </OverrideDeceleration>
- 		<Armor_Type> Armor_Space </Armor_Type>
+ 		<Armor_Type> Armor_S100 </Armor_Type>
 		<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
-		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>25</Bank_Turn_Angle>	
+		<Max_Rate_Of_Roll>0.15</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>10</Bank_Turn_Angle>	
 		<Max_Thrust>0.2</Max_Thrust>
 		<Hyperspace>Yes</Hyperspace>
 		<Hyperspace_Speed>2.0</Hyperspace_Speed>
@@ -33,24 +34,24 @@
 		<Build_Initially_Locked>No</Build_Initially_Locked>
 		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
 		<Slice_Cost_Credits>3252</Slice_Cost_Credits>
-		<Tech_Level>1</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>4</Required_Star_Base_Level>
 		<Required_Planets> Bestine, Bothawui, Byss, Corellia, Fondor, Kuat, MonCalimari, Sullust </Required_Planets>
 		<Required_Special_Structures />
-		<Autoresolve_Health>6992</Autoresolve_Health>
-		<Tactical_Health>2672</Tactical_Health>
-		<Shield_Points>4320</Shield_Points>
-		<Shield_Refresh_Rate>432</Shield_Refresh_Rate>
-		<Energy_Capacity>8000</Energy_Capacity>
-		<Energy_Refresh_Rate>800</Energy_Refresh_Rate>
+		<Autoresolve_Health>108240</Autoresolve_Health>
+		<Tactical_Health>33760</Tactical_Health>
+		<Shield_Points>74480</Shield_Points>
+		<Shield_Refresh_Rate>745</Shield_Refresh_Rate>
+		<Energy_Capacity>304935</Energy_Capacity>
+		<Energy_Refresh_Rate>30494</Energy_Refresh_Rate>
 		<Ship_Class>capital</Ship_Class>
 		<Formation_Priority>5</Formation_Priority>
 		<Political_Faction>Rebel</Political_Faction>
 		<Squadron_Capacity>40</Squadron_Capacity>
 		<Build_Cost_Credits>11420</Build_Cost_Credits>
-		<AI_Combat_Power>8636</AI_Combat_Power>
+		<AI_Combat_Power>5700</AI_Combat_Power>
 		<Build_Time_Seconds>56</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>360</Size_Value>
@@ -58,43 +59,35 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 
 		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_0>Z95_Headhunter2_Squadron, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Y_Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>A_Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>X_Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_2>Y-Wing_Squadron, 1</Starting_Spawned_Units_Tech_2>
-		<Starting_Spawned_Units_Tech_2>A_Wing_Squadron2, 1</Starting_Spawned_Units_Tech_2>
-		<Starting_Spawned_Units_Tech_2>X-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_2>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_4>E_Wing_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>B-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>X-Wing_Squadron3, 1</Starting_Spawned_Units_Tech_4>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_5>E_Wing_Squadron2, 1</Starting_Spawned_Units_Tech_5>
-		<Starting_Spawned_Units_Tech_5>B-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_5>
-		<Starting_Spawned_Units_Tech_5>X-Wing_Squadron4, 1</Starting_Spawned_Units_Tech_5>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 		<Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
 		<CategoryMask> Capital | AntiFrigate | AntiCapital </CategoryMask>  
 
 		<HardPoints> 
-			HP_Mc80_00,
-			HP_Mc80_01, 
-			HP_Mc80_02, 
-			HP_Mc80_03, 
-			HP_Mc80_04, 
-			HP_Mc80_05,
-			HP_Mc80_Fighter_Bay,
-			HP_Mc80_Tractor_Beam,
-			HP_Mc80_Engines,
-			HP_Mc80_Engines2
+			HP_MC80_New_00,
+			HP_MC80_New_01, 
+			HP_MC80_New_02, 
+			HP_MC80_New_03, 
+			HP_MC80_New_04, 
+			HP_MC80_New_05,
+			HP_MC80_New_06,
+			HP_MC80_New_07,
+			HP_MC80_New_08,
+			HP_MC80_New_09,
+			HP_MC80_New_10,
+			HP_MC80_New_11,
+			HP_MC80_New_12,
+			HP_MC80_New_13,
+			HP_Mc80_Fighter_Bay
 		</HardPoints>
 
 		<Icon_Name>I_BUTTON_MON_CALIMARI_CRUISER.tga</Icon_Name>
@@ -164,8 +157,8 @@
 				<Type>DEFEND</Type>
 				<!-- A quick replenishment of depleted shields -->
 				<Expiration_Seconds>1</Expiration_Seconds>
-				<Recharge_Seconds>60</Recharge_Seconds>
-				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.1f</Mod_Multiplier>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.01f</Mod_Multiplier>
 				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	100.0f</Mod_Multiplier>
 				
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
@@ -177,7 +170,7 @@
 		<Score_Cost_Credits>8636</Score_Cost_Credits>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>11420</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>696</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue> 
@@ -196,9 +189,9 @@
 		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
 		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
 		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
-		<Scale_Factor> 0.51 </Scale_Factor>
+		<Scale_Factor>1.02</Scale_Factor>
 		<Layer_Z_Adjust> -150.0 </Layer_Z_Adjust>
-		<Max_Speed> 1.714 </Max_Speed>
+		<Max_Speed>0.03</Max_Speed>
 		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
 		<Max_Thrust> 0.05 </Max_Thrust>
 		<Max_Rate_Of_Roll> 0.02 </Max_Rate_Of_Roll>

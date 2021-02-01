@@ -1,5 +1,13 @@
 <?xml version="1.0"?>
 <SpaceCorvettes>
+	<SpaceUnit Name="Tartan_Patrol_Cruiser">
+		<Variant_Of_Existing_Type>Carrack_Cruiser</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="Tartan_Patrol_Cruiser_Easy">
+		<Variant_Of_Existing_Type>Tartan_Patrol_Cruiser</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
 	<SpaceUnit Name="IPV1_System_Patrol_Craft">
 
 		<Text_ID>TEXT_UNIT_IPV-1_SYSTEM_PATROL_CRAFT</Text_ID>

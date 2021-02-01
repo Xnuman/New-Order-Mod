@@ -1,6 +1,44 @@
 <?xml version="1.0"?>
 <Multiplayer_Structure_Markers>
 
+	<MultiplayerStructureMarker Name="Team_00_Space_Station_Era_2">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1E2, Skirmish_Empire_Star_Base_1E2 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_01_Space_Station_Era_2">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1E2, Skirmish_Empire_Star_Base_1E2 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_02_Space_Station_Era_2">
+		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>
+		<Is_Marker>Yes</Is_Marker>
+		<Galactic_Model_Name />
+		<Marker_For_Specific_Object_Type> Skirmish_Rebel_Star_Base_1E2, Skirmish_Empire_Star_Base_1E2 </Marker_For_Specific_Object_Type>
+		<Space_Model_Name>EB_STATION_01.ALO</Space_Model_Name>
+		<Land_Model_Name />
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>  
+		<Affiliation>Neutral</Affiliation>
+		<Include_In_UI_Map_Header>false</Include_In_UI_Map_Header>
+	</MultiplayerStructureMarker>
 
 	<MultiplayerStructureMarker Name="Team_00_Space_Station_Era_3">
 		<Text_ID>TEXT_ORBITAL_STATION_POSITION</Text_ID>

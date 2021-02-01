@@ -3,13 +3,13 @@
 <Strike_Data>
 	<SpaceUnit Name="Strike_Cruiser">
 		<Text_ID>TEXT_UNIT_STRIKE</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_CRUISER</Encyclopedia_Unit_Class>
 		<GUI_Row> 1 </GUI_Row>
 		<Space_Model_Name>F_Loronar.alo</Space_Model_Name>
 		<Select_Box_Scale>375</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-40</Select_Box_Z_Adjust>
 		<Mass>0.9995</Mass>
-		<Scale_Factor>0.33</Scale_Factor>
+		<Scale_Factor>0.66</Scale_Factor>
 
         	<Ranking_In_Category>6</Ranking_In_Category>
 		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
@@ -28,18 +28,18 @@
 		<Hyperspace_Speed>1.0</Hyperspace_Speed>
 		<Maintenance_Cost>0.1</Maintenance_Cost>
 
-		<Armor_Type> Armor_Space </Armor_Type>
+		<Armor_Type> Armor_S50 </Armor_Type>
         	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
-		<Damage>750</Damage>
-		<Autoresolve_Health>2352</Autoresolve_Health>
-		<Shield_Points>1600</Shield_Points>
-		<Tactical_Health>752</Tactical_Health> <!-- was 2800 -->
-		<Shield_Refresh_Rate>160</Shield_Refresh_Rate> <!-- was 50 -->
-		<Energy_Capacity>3000</Energy_Capacity>
-		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+		<Damage>5815</Damage>
+		<Autoresolve_Health>26560</Autoresolve_Health>
+		<Shield_Points>15840</Shield_Points>
+		<Tactical_Health>10720</Tactical_Health> <!-- was 2800 -->
+		<Shield_Refresh_Rate>158</Shield_Refresh_Rate> <!-- was 50 -->
+		<Energy_Capacity>84700</Energy_Capacity>
+		<Energy_Refresh_Rate>8470</Energy_Refresh_Rate>
 
 		<Affiliation>Empire</Affiliation>
-		<Tech_Level>3</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>2</Required_Star_Base_Level>
@@ -53,7 +53,7 @@
 		<Transport_Capacity>12</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
 		<Build_Cost_Credits>5400</Build_Cost_Credits>
-		<AI_Combat_Power>3102</AI_Combat_Power>
+		<AI_Combat_Power>1400</AI_Combat_Power>
 		<Build_Time_Seconds>28</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
@@ -63,22 +63,22 @@
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
-		<Space_FOW_Reveal_Range>900.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1700.0</Targeting_Max_Attack_Distance>
 		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
 
 		<Death_Clone>Damage_Normal, Strike_Death_Clone</Death_Clone>
 
 		<HardPoints>
-			HP_Strike_00,
-			HP_Strike_01,
-			HP_Strike_02,
-			HP_Strike_03,
-			HP_Strike_04,
-			HP_Strike_05,
-			HP_Strike_Fighter_Bay, 
-			HP_Strike_Shield_Generator, 
-			HP_Strike_Engines
+			HP_Strike_New_00,
+			HP_Strike_New_01,
+			HP_Strike_New_02,
+			HP_Strike_New_03,
+			HP_Strike_New_04,
+			HP_Strike_New_05,
+			HP_Strike_New_06,
+			HP_Strike_New_07,
+			HP_Strike_Fighter_Bay
 		</HardPoints>
 
 		<CategoryMask> Frigate | AntiCorvette | AntiFrigate | AntiCapital </CategoryMask>
@@ -146,21 +146,12 @@
 
 		<!-- Fighter complement -->
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_4>TIE_Avenger_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_6>TIE_Avenger_Squadron, 2</Starting_Spawned_Units_Tech_6>
-		<Starting_Spawned_Units_Tech_6>TIE_Scimitar_Squadron, 1</Starting_Spawned_Units_Tech_6>
 
 		<Encyclopedia_Text> TEXT_TOOLTIP_STRIKE </Encyclopedia_Text>
 		<Score_Cost_Credits>3102</Score_Cost_Credits>
 
-		<Tactical_Build_Cost_Multiplayer>5400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>1590</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites> </Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
@@ -182,7 +173,7 @@
 		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
 		<Scale_Factor>0.33</Scale_Factor>
 		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
-		<Max_Speed>1.714</Max_Speed>
+		<Max_Speed>0.03</Max_Speed>
 		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
 		<Max_Thrust>1</Max_Thrust>
 		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
@@ -190,6 +181,5 @@
 		<Affiliation>Empire</Affiliation>
 		<Ship_Class>frigate</Ship_Class>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
-
 	</SpaceUnit>
 </Strike_Data>

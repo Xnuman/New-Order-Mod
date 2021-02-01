@@ -11,11 +11,11 @@
 		<Text_ID>TEXT_UNIT_SCIMITAR</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_SCIMITAR</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
-		<Space_Model_Name>scimitar_assault_bomber.ALO</Space_Model_Name>
+		<Space_Model_Name>imp_scimitar.ALO</Space_Model_Name>
 		<Icon_Name>i_button_scimitar.tga</Icon_Name>
 
-		<Scale_Factor>0.645</Scale_Factor>
-		<Select_Box_Scale>50</Select_Box_Scale>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>30</Select_Box_Scale>
 		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
 		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
 

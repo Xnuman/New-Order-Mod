@@ -1,96 +1,111 @@
 <?xml version="1.0"?>
-
 <VSD2_Data>
-	<SpaceUnit Name="Victory_2_Destroyer_No_Fighters">
+	<SpaceUnit Name="Victory_Destroyer_2_No_Fighters">
 		<Text_ID>TEXT_UNIT_VSD_II</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STAR_DESTROYER</Encyclopedia_Unit_Class>
-		<GUI_Row> 1 </GUI_Row>
-		<Space_Model_Name>EV_VICTORY2.ALO</Space_Model_Name>
-		<Select_Box_Scale>750</Select_Box_Scale>
-		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
-		<Mass>0.9995</Mass>
-		<Scale_Factor>0.39</Scale_Factor>
-
-        	<Ranking_In_Category>6</Ranking_In_Category>
-		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-		<Max_Speed>1.714</Max_Speed>
-		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
-		<MovementClass> Space </MovementClass>
-		<Space_Layer> Frigate </Space_Layer>
-		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>		
-		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>8</Bank_Turn_Angle>
-		<OverrideAcceleration> .03 </OverrideAcceleration>
-		<OverrideDeceleration> .03 </OverrideDeceleration>
+		<Encyclopedia_Text> TEXT_TOOLTIP_VSD_II</Encyclopedia_Text>
+		<Icon_Name>i_button_victory_class2.tga</Icon_Name>
 		
-		<Max_Thrust>1.5</Max_Thrust>
+		<Space_Model_Name>imp_victory_ii.alo</Space_Model_Name>
+		<Scale_Factor>0.386</Scale_Factor>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Select_Box_Scale>1135</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-150</Select_Box_Z_Adjust>
+
+		<Mass>0.999</Mass>
+		<Max_Speed>1.428</Max_Speed>
+		<Max_Thrust>0.375</Max_Thrust>
+		<OverrideAcceleration>0.0125</OverrideAcceleration>
+		<OverrideDeceleration>0.0125</OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.334</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.334</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>7.5</Bank_Turn_Angle>
 		<Hyperspace>Yes</Hyperspace>
 		<Hyperspace_Speed>2.0</Hyperspace_Speed>
-		<Maintenance_Cost>0.1</Maintenance_Cost>
-
-		<Armor_Type> Armor_Space </Armor_Type>
-        	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
-		<Damage>2300</Damage>
-		<Autoresolve_Health>4540</Autoresolve_Health>
-		<Shield_Points>2880</Shield_Points>
-		<Tactical_Health>1660</Tactical_Health> <!-- was 2800 -->
-		<Shield_Refresh_Rate>288</Shield_Refresh_Rate> <!-- was 50 -->
-		<Energy_Capacity>3000</Energy_Capacity>
-		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
-
 		<Affiliation>Empire</Affiliation>
-		<Tech_Level>99</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>3</Required_Star_Base_Level>
-		<Required_Special_Structures />
-		<Ship_Class>frigate</Ship_Class>
+
+        <Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
+		<Shield_Points>51200</Shield_Points>
+		<Shield_Refresh_Rate>512</Shield_Refresh_Rate>
+		<Armor_Type>Armor_S90</Armor_Type>
+		<Tactical_Health>31840</Tactical_Health>
+		<Autoresolve_Health>83040</Autoresolve_Health>
+
+		<Energy_Capacity>6000</Energy_Capacity>
+		<Energy_Refresh_Rate>700</Energy_Refresh_Rate>
+		<Damage>16190</Damage>
+
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+		<Ship_Class>capital</Ship_Class>
 		<Formation_Priority>3</Formation_Priority>
 		<Is_Escort>yes</Is_Escort>
 		<Is_Bomber>no</Is_Bomber>
+		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
 		<Political_Control>0</Political_Control>
-		<Squadron_Capacity>15</Squadron_Capacity>
-		<Transport_Capacity>12</Transport_Capacity>
+		<Squadron_Capacity>6</Squadron_Capacity>
+		<Transport_Capacity>20</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
-		<Build_Cost_Credits>7510</Build_Cost_Credits>
-		<AI_Combat_Power>6840</AI_Combat_Power>
-		<Build_Time_Seconds>68</Build_Time_Seconds>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<Build_Cost_Credits>11890</Build_Cost_Credits>
+		<Tactical_Build_Cost_Multiplayer>4620</Tactical_Build_Cost_Multiplayer>
+		<Override_Bounty_SP>9132</Override_Bounty_SP>
+		<Override_Bounty_MP>9132</Override_Bounty_MP>
+		<Tactical_Bribe_Cost>9132</Tactical_Bribe_Cost>
+		<Piracy_Value_Credits>9132</Piracy_Value_Credits>
+		<AI_Combat_Power>4240</AI_Combat_Power>
+		<Build_Time_Seconds>42</Build_Time_Seconds>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<GUI_Row>1</GUI_Row>
 		<Size_Value>8</Size_Value>
+
 		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
-		<SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SPAWN_SQUADRON</SpaceBehavior>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
-		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
-		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
-
-		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
-
+		
 		<HardPoints>
-			HP_Victory_II_00, 
-			HP_Victory_II_01, 
+			HP_Victory_Facing,
+			HP_Victory_II_00,
+			HP_Victory_II_01,
+			HP_Victory_II_02,
 			HP_Victory_II_03,
 			HP_Victory_II_04,
-			HP_Victory_II_05, 
-			HP_Victory_II_06, 
+			HP_Victory_II_05,
+			HP_Victory_II_06,
 			HP_Victory_II_07,
 			HP_Victory_II_08,
+			HP_Victory_II_09,
+			HP_Victory_II_10,
+			HP_Victory_II_11,
+			
+			HP_VSD_II_New_100,
+			HP_VSD_II_New_101,
+			HP_VSD_II_New_102,
+			HP_VSD_II_New_103,
+			HP_VSD_II_New_104,
+			HP_VSD_II_New_105,
+			HP_VSD_II_New_106,
+			HP_VSD_II_New_107,
+			HP_VSD_II_New_108,
+			HP_VSD_II_New_109,
+			
 			HP_Victory_Fighter_Bay
 		</HardPoints>
-
-		<CategoryMask> Frigate | AntiFrigate | AntiCapital | AntiCorvette </CategoryMask>
-		<Icon_Name>i_button_victory_class2.tga</Icon_Name>
-		<GUI_Model_Name>EV_VICTORY2.ALO</GUI_Model_Name>
-		<GUI_Distance>1100</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
-		<GUI_Velocity>45</GUI_Velocity>
-		<Victory_Relevant>yes</Victory_Relevant>
-		<Has_Space_Evaluator>True</Has_Space_Evaluator>
-
+		
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Victory_Destroyer</SFXEvent_Build_Complete>
@@ -133,74 +148,53 @@
 		
 		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
 
-		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
-		
-		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
-		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>	 
+		<GUI_Model_Name>imp_victory_ii.alo</GUI_Model_Name>
+		<GUI_Distance>2300</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
 
+		<CategoryMask> Capital | AntiFrigate | AntiCapital</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_radar_isd.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
 		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
 		<Idle_Chase_Range>0.0</Idle_Chase_Range>
 		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
 		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
-		<Targeting_Priority_Set>Cruiser</Targeting_Priority_Set>
-		
-		<Encyclopedia_Text> TEXT_TOOLTIP_VSD_II</Encyclopedia_Text>
-		<Score_Cost_Credits> 6840</Score_Cost_Credits>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
 
-		<Tactical_Build_Cost_Multiplayer>7510</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites> </Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-		<Population_Value>8</Population_Value>
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
 
-		<Tactical_Bribe_Cost>6840</Tactical_Bribe_Cost>
-		<Piracy_Value_Credits>6840</Piracy_Value_Credits>
+		<Abilities SubObjectList="Yes">
+		</Abilities>
+
+		<Score_Cost_Credits>4240</Score_Cost_Credits>
+		<Population_Value>10</Population_Value>
 
 	</SpaceUnit>
 
 	<SpaceUnit Name="Victory_2_Destroyer">
-		<Variant_Of_Existing_Type>Victory_2_Destroyer_No_Fighters</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Victory_Destroyer_2_No_Fighters</Variant_Of_Existing_Type>
 		<Tech_Level>1</Tech_Level>
 
 		<!-- Set to spawn all units once and then not continue - no reserves -->
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>5.0</Spawned_Squadron_Delay_Seconds>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_4>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_5>TIE_Avenger_Squadron, 1</Starting_Spawned_Units_Tech_5>
-		<Starting_Spawned_Units_Tech_5>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_5>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_6>TIE_Avenger_Squadron, 2</Starting_Spawned_Units_Tech_6>
-	</SpaceUnit>
-
-     <SpaceUnit Name="VSD_II_Death_Clone">
-		<Text_ID>TEXT_UNIT_VSD_II</Text_ID>
-		<Space_Model_Name>EV_VICTORY2_DEATH.ALO</Space_Model_Name>
-		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
-		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
-		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
-		<Scale_Factor>0.39</Scale_Factor>
-		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
-		<Max_Speed>1.714</Max_Speed>
-		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
-		<Max_Thrust>1</Max_Thrust>
-		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>0</Bank_Turn_Angle>
-		<Affiliation>Empire</Affiliation>
-		<Ship_Class>frigate</Ship_Class>
-		<Remove_Upon_Death>true</Remove_Upon_Death>
 	</SpaceUnit>
 	
 	<!-- Rebel variant for some heroes -->
 	
 	<SpaceUnit Name="Victory_2_Destroyer_Rebel">
-		<Variant_Of_Existing_Type>Victory_2_Destroyer_No_Fighters</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Victory_Destroyer_2_No_Fighters</Variant_Of_Existing_Type>
 		<Tech_Level>99</Tech_Level>
 		<Build_Cost_Credits>9320</Build_Cost_Credits>
 		<Tactical_Build_Cost_Multiplayer>9320</Tactical_Build_Cost_Multiplayer>

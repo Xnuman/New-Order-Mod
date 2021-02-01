@@ -3,30 +3,30 @@
 <Carrack_Files>
 	<SpaceUnit Name="Carrack_Cruiser">
 		<Text_ID>TEXT_UNIT_CARRACK</Text_ID>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_CRUISER</Encyclopedia_Unit_Class>
 		<GUI_Row> 0 </GUI_Row>
 		<Space_Model_Name>F_Carrack.alo</Space_Model_Name>
 		<Select_Box_Scale>300</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
 		<Mass>0.9995</Mass>
-		<Scale_Factor>0.325</Scale_Factor>
+		<Scale_Factor>0.65</Scale_Factor>
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
 
         	<Ranking_In_Category>15</Ranking_In_Category>
 		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
 		
-		<Max_Speed>2.285</Max_Speed>
-		<Max_Rate_Of_Turn>1.4</Max_Rate_Of_Turn>
+		<Max_Speed>2.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.6</Max_Rate_Of_Turn>
 		<MovementClass> Space </MovementClass>
-		<Space_Layer> Corvette </Space_Layer>
+		<Space_Layer> Frigate </Space_Layer>
 		<Layer_Z_Adjust>0</Layer_Z_Adjust>
 		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>15</Bank_Turn_Angle>
 		<OverrideAcceleration> .065 </OverrideAcceleration>
 		<OverrideDeceleration> .065 </OverrideDeceleration>
 
-		<Armor_Type> Armor_Space </Armor_Type>
+		<Armor_Type> Armor_S60 </Armor_Type>
         	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
 		<Max_Thrust>0.8</Max_Thrust>
 		<Hyperspace>Yes</Hyperspace>
@@ -34,17 +34,17 @@
 		<Maintenance_Cost>0.05</Maintenance_Cost>
 
 		<Affiliation>Empire</Affiliation>
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>2</Required_Star_Base_Level>
-		<Shield_Points>880</Shield_Points>
-		<Tactical_Health>440</Tactical_Health>
-		<Damage>360</Damage>
-		<Autoresolve_Health>1320</Autoresolve_Health> 
-		<Shield_Refresh_Rate>88</Shield_Refresh_Rate>
-		<Energy_Capacity>4500</Energy_Capacity>
-		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
-		<Ship_Class>corvette</Ship_Class>
+		<Shield_Points>12800</Shield_Points>
+		<Tactical_Health>8640</Tactical_Health>
+		<Damage>4886</Damage>
+		<Autoresolve_Health>21440</Autoresolve_Health> 
+		<Shield_Refresh_Rate>128</Shield_Refresh_Rate>
+		<Energy_Capacity>70000</Energy_Capacity>
+		<Energy_Refresh_Rate>7000</Energy_Refresh_Rate>
+		<Ship_Class>frigate</Ship_Class>
 		<Formation_Priority>3</Formation_Priority>
 		<Is_Escort>Yes</Is_Escort>
 		<Is_Bomber>no</Is_Bomber>
@@ -53,7 +53,7 @@
 		<Transport_Capacity>4</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
 		<Build_Cost_Credits>2030</Build_Cost_Credits>
-		<AI_Combat_Power>2033</AI_Combat_Power>
+		<AI_Combat_Power>1320</AI_Combat_Power>
 		<Build_Time_Seconds>34</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>120</Size_Value>
@@ -63,17 +63,17 @@
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
 
-		<Death_Clone>Damage_Normal, Tartan_Patrol_Cruiser_Death_Clone</Death_Clone>
-		<Space_FOW_Reveal_Range>650.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<Death_Clone>Damage_Normal, Carrack_Cruiser_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>1300.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1700.0</Targeting_Max_Attack_Distance>
 
 		<Hardpoints>
-				HP_Carrack_00, 
-				HP_Carrack_01, 
-				HP_Carrack_02, 
-				HP_Carrack_03, 
-				HP_Carrack_04, 
-				HP_Carrack_05
+				HP_Carrack_New_00, 
+				HP_Carrack_New_01, 
+				HP_Carrack_New_02, 
+				HP_Carrack_New_03, 
+				HP_Carrack_New_04, 
+				HP_Carrack_New_05
 		</Hardpoints>
 
 		<CategoryMask> Frigate | AntiFighter | AntiBomber | AntiCorvette | AntiFrigate </CategoryMask>
@@ -126,95 +126,20 @@
 		<Score_Cost_Credits> 2033</Score_Cost_Credits>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>2030</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>1320</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites> </Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-		<Population_Value>2</Population_Value>
+		<Population_Value>4</Population_Value>
 
 		<Piracy_Value_Credits>2033</Piracy_Value_Credits>
 		<Tactical_Bribe_Cost>2402</Tactical_Bribe_Cost>
 	</SpaceUnit>
-	
-	<SpaceUnit Name="Tartan_Patrol_Cruiser_Easy">
-		<Variant_Of_Existing_Type>Tartan_Patrol_Cruiser</Variant_Of_Existing_Type>
-		<Tech_Level>99</Tech_Level>
-	</SpaceUnit>
-	<SpaceUnit Name="Tartan_Patrol_Cruiser">
-		<Variant_Of_Existing_Type>Carrack_Cruiser</Variant_Of_Existing_Type>
-		<Tech_Level>99</Tech_Level>
-		<Lua_Script>ObjectScript_PointDefense</Lua_Script>
-	
-		<!-- Non-Hero unit abilities description -->
-		<Unit_Abilities_Data SubObjectList="Yes"> 
-            <Unit_Ability>
-                <Type>LASER_DEFENSE</Type>
-                <Recharge_Seconds>30.0</Recharge_Seconds>
-                <GUI_Activated_Ability_Name> Carrack_Laser_Defense </GUI_Activated_Ability_Name>
-                <Effective_Radius> 900.0 </Effective_Radius>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tartan</SFXEvent_GUI_Unit_Ability_Activated>
-				<SFXEvent_GUI_Unit_Ability_Deactivated />
-                <Supports_Autofire>True</Supports_Autofire>
-           </Unit_Ability>
-        </Unit_Abilities_Data>
 
-		<Abilities SubObjectList="Yes">
-            <Laser_Defense_Ability Name="Carrack_Laser_Defense">
-                <Activation_Style> User_Input </Activation_Style>
-                <Defense_Duration_In_Secs> 15.0 </Defense_Duration_In_Secs>
-                <Laser_Color>139,230,104,255</Laser_Color>
-                <Bone_Names>MuzzleA_03, MuzzleA_04, MuzzleA_06, MuzzleA_07</Bone_Names>
-                <Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
-                <Protection_Radius>900.0</Protection_Radius>
-                <Laser_Beam_Frames>2</Laser_Beam_Frames>
-                <Laser_Beam_Width>4</Laser_Beam_Width>
-                <Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
-                <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
-                <Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
-                <Recharge_Time_In_Secs>0.2</Recharge_Time_In_Secs>
-                <Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
-            </Laser_Defense_Ability>
-		</Abilities>
-	</SpaceUnit>
-	<SpaceUnit Name="Heavy_Carrack">
-		<Variant_Of_Existing_Type>Carrack_Cruiser</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_CARRACK_I</Text_ID>
-		<Damage>650</Damage>
-		<Build_Cost_Credits>2170</Build_Cost_Credits>
-		<AI_Combat_Power>2167</AI_Combat_Power>
-		<Score_Cost_Credits> 2167</Score_Cost_Credits>
-		<Piracy_Value_Credits>2167</Piracy_Value_Credits>
-		<Tactical_Bribe_Cost>2167</Tactical_Bribe_Cost>
-		<Build_Time_Seconds>36</Build_Time_Seconds>
-		
-		<Hardpoints>
-				HP_Carrack_00, 
-				HP_Carrack_01, 
-				HP_Carrack_02A, 
-				HP_Carrack_03A, 
-				HP_Carrack_04A, 
-				HP_Carrack_05A
-		</Hardpoints>
-		<Encyclopedia_Text>TEXT_TOOLTIP_CARRACK_I</Encyclopedia_Text>
-
-		<CategoryMask> Corvette | AntiCorvette | AntiFrigate </CategoryMask>
-		<Targeting_Priority_Set>Cruiser</Targeting_Priority_Set>
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>2170</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites> </Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-		<Population_Value>2</Population_Value>
-
-	</SpaceUnit>
-
-	<SpaceUnit Name="Tartan_Patrol_Cruiser_Death_Clone">
+	<SpaceUnit Name="Carrack_Cruiser_Death_Clone">
 		<Text_ID>TEXT_UNIT_CARRACK</Text_ID>
 		<Space_Model_Name>F_Carrack_D.ALO</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
@@ -222,14 +147,18 @@
 		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
 		<Scale_Factor>0.325</Scale_Factor>
 		<Layer_Z_Adjust>0</Layer_Z_Adjust>
-		<Max_Speed>0.25</Max_Speed>
-		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Speed>0.03</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
 		<Max_Thrust>0.05</Max_Thrust>
 		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>5</Bank_Turn_Angle>
 		<Affiliation>Empire</Affiliation>
 		<Ship_Class>capital_ship</Ship_Class>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
-
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Heavy_Carrack">
+		<Variant_Of_Existing_Type>Carrack_Cruiser</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
 	</SpaceUnit>
 </Carrack_Files>

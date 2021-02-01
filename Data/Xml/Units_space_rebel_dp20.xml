@@ -13,7 +13,7 @@
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 
         <Ranking_In_Category>15</Ranking_In_Category>
-		<Max_Speed>2.0</Max_Speed>  <!-- was 3.0 -->
+		<Max_Speed>2.14</Max_Speed>  <!-- was 3.0 -->
 		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn> <!-- was 1.6 -->
 		<MovementClass> Space </MovementClass>
 		<Space_Layer> Corvette </Space_Layer>
@@ -24,17 +24,16 @@
 		<OverrideDeceleration> .05 </OverrideDeceleration>
 
 		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
-		<Armor_Type> Armor_Space </Armor_Type>
-        	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
+		<Armor_Type> Armor_S10 </Armor_Type>
+        <Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
 		<Max_Thrust>0.8</Max_Thrust>
 		<Hyperspace>Yes</Hyperspace>
 		<Hyperspace_Speed>1.0</Hyperspace_Speed>
 		<Maintenance_Cost>0.05</Maintenance_Cost>
 
-		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
-		<Remove_Upon_Death>true</Remove_Upon_Death>
-		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+		<Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>840.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1210.0</Targeting_Max_Attack_Distance>
 
 		<Affiliation>Rebel</Affiliation>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
@@ -62,7 +61,7 @@
 		<Transport_Capacity>6</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
 		<Build_Cost_Credits>1320</Build_Cost_Credits>
-		<AI_Combat_Power>1321</AI_Combat_Power>
+		<AI_Combat_Power>650</AI_Combat_Power>
 		<Build_Time_Seconds>22</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>120</Size_Value>
@@ -74,22 +73,22 @@
 		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
 
 		<HardPoints> 
-			HP_Corellian_Gunsh_01, 
-			HP_Corellian_Gunsh_02, 
-			HP_Corellian_Gunsh_03, 
-			HP_Corellian_Gunsh_04, 
-			HP_Corellian_Gunsh_05, 
-			HP_Corellian_Gunsh_06, 
-			HP_Corellian_Gunsh_07, 
-			HP_Corellian_Gunsh_08, 
-			HP_Corellian_Gunsh_09, 
-			HP_Corellian_Gunsh_10, 
-			HP_Corellian_Gunsh_11, 
-			HP_Corellian_Gunsh_12, 
-			HP_Corellian_Gunsh_13, 
-			HP_Corellian_Gunsh_14, 
-			HP_Corellian_Gunsh_15, 
-			HP_Corellian_Gunsh_16
+			HP_Corellian_Gunsh_New_01,
+			HP_Corellian_Gunsh_New_02,
+			HP_Corellian_Gunsh_New_03,
+			HP_Corellian_Gunsh_New_04,
+			HP_Corellian_Gunsh_New_05,
+			HP_Corellian_Gunsh_New_06,
+			HP_Corellian_Gunsh_New_07,
+			HP_Corellian_Gunsh_New_08,
+			HP_Corellian_Gunsh_New_09,
+			HP_Corellian_Gunsh_New_10,
+			HP_Corellian_Gunsh_New_11,
+			HP_Corellian_Gunsh_New_12,
+			HP_Corellian_Gunsh_New_13,
+			HP_Corellian_Gunsh_New_14,
+			<!-- HP_Corellian_Gunsh_New_15, -->
+			<!-- HP_Corellian_Gunsh_New_16 -->
 		</HardPoints>
 
 		<Icon_Name>I_BUTTON_Corellian_Gunship.tga</Icon_Name>
@@ -155,7 +154,7 @@
                 <Type>LASER_DEFENSE</Type>
                 <Recharge_Seconds>30.0</Recharge_Seconds>
                 <GUI_Activated_Ability_Name> DP20_Laser_Defense </GUI_Activated_Ability_Name>
-                <Effective_Radius> 900.0 </Effective_Radius>
+                <Effective_Radius> 715.0 </Effective_Radius>
                 <Supports_Autofire>True</Supports_Autofire>
 				
 				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_POINT_DEFENCE_NAME</Alternate_Name_Text>
@@ -187,7 +186,7 @@
 		<Score_Cost_Credits> 1321</Score_Cost_Credits>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>1320</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>650</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
@@ -208,14 +207,14 @@
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
 		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
-		<Scale_Factor>0.1875</Scale_Factor>
+		<Scale_Factor>0.375</Scale_Factor>
 		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
-		<Max_Speed>0.25</Max_Speed>
+		<Max_Speed>0.03</Max_Speed>
 		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
 		<Max_Thrust>0.05</Max_Thrust>
 		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>5</Bank_Turn_Angle>
-		<Affiliation>Empire</Affiliation>
+		<Affiliation>Rebel</Affiliation>
 		<Ship_Class>corvette</Ship_Class>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
 

@@ -49,14 +49,10 @@ function Definitions()
 	TaskForce = {
 		{
 		"ReserveForce"
-		,"RS_Level_Two_Starbase_Upgrade | RS_Level_Three_Starbase_Upgrade | RS_Level_Four_Starbase_Upgrade | RS_Level_Five_Starbase_Upgrade | RS_Level_Six_Starbase_Upgrade = 0,1"
-		,"ES_Level_Two_Starbase_Upgrade | ES_Level_Three_Starbase_Upgrade | ES_Level_Four_Starbase_Upgrade | ES_Level_Five_Starbase_Upgrade | ES_Level_Six_Starbase_Upgrade = 0,1"
-		,"X_Wing_New_Squadron | A_Wing_New_Squadron | Y_Wing_New_Squadron | CR90_New | DP20_New | Nebulon_B_Frigate_New | Neutron_Star_New | Assault_Frigate_New | MC80_New = 0,3"
-		,"Y-Wing_Longprobe_Squadron = 0,1"
-		,"TIE_ln_New_Squadron | TIE_in_New_Squadron | TIE_sa_New_Squadron | Nebulon_B_Frigate_New | Carrack_Cruiser_New | Strike_Cruiser_New | Dreadnought_New | Imperial_Star_Destroyer_I_New = 0,3"
-		,"TIE_Scout_Squadron | TIE_Phantom_Squadron | TIE_Hunter_Squadron | TIE_Defender_Squadron | Missile_Boat_Squadron = 0,1"
-		,"Rogue_Squadron_Space | Sundered_Heart | Han_Solo_Team_Space_MP | Home_One = 0,1"
-		,"Accuser_Star_Destroyer | Admonitor_Star_Destroyer | Singularity = 0,1"
+		,"RS_Level_Two_Starbase_Upgrade | RS_Level_Three_Starbase_Upgrade | RS_Level_Four_Starbase_Upgrade | RS_Level_Five_Starbase_Upgrade  = 0,1"
+		,"ES_Level_Two_Starbase_Upgrade | ES_Level_Three_Starbase_Upgrade | ES_Level_Four_Starbase_Upgrade | ES_Level_Five_Starbase_Upgrade  = 0,1"
+		,"X_Wing_Squadron | A_Wing_Squadron | Y_Wing_Squadron | Corellian_Corvette | Corellian_Gunboat | Nebulon_B_Frigate | Neutron_Star | Alliance_Assault_Frigate | Calamari_Cruiser = 0,3"
+		,"TIE_Fighter_Squadron | TIE_Interceptor_Squadron | TIE_Bomber_Squadron | Nebulon_B_Frigate | Carrack_Cruiser | Strike_Cruiser | Dreadnought_Imp | Victory_Destroyer | Victory_2_Destroyer | Star_Destroyer = 0,3"
 		}
 	}
 	RequiredCategories = {"Fighter | Bomber | Corvette | Frigate | Capital | SpaceHero"}
@@ -72,19 +68,19 @@ function ReserveForce_Thread()
 		
 	-- Give some time to accumulate money.
 	tech_level = PlayerObject.Get_Tech_Level()
-	min_credits = 15000
+	min_credits = 3000
 	max_sleep_seconds = 15
 	if tech_level == 2 then
-		min_credits = 20000
+		min_credits = 4000
 		max_sleep_seconds = 20
 	elseif tech_level == 3 then
-		min_credits = 25000
+		min_credits = 5000
 		max_sleep_seconds = 15
 	elseif tech_level == 4 then
-		min_credits = 35000
+		min_credits = 7000
 		max_sleep_seconds = 15
 	elseif tech_level == 5 then
-		min_credits = 40000
+		min_credits = 10000
 		max_sleep_seconds = 15
 	end
 	

@@ -9,12 +9,12 @@
 		<Select_Box_Scale>590</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
 		<Mass>0.9995</Mass>
-		<Scale_Factor>0.462</Scale_Factor>
+		<Scale_Factor>0.924</Scale_Factor>
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 
         	<Ranking_In_Category>6</Ranking_In_Category>
 		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-		<Max_Speed>1.714</Max_Speed>
+		<Max_Speed>1.29</Max_Speed>
 		<Max_Rate_Of_Turn>0.7</Max_Rate_Of_Turn>
 		<MovementClass> Space </MovementClass>
 		<Space_Layer> Frigate </Space_Layer>
@@ -29,19 +29,19 @@
 		<Hyperspace_Speed>1.0</Hyperspace_Speed>
 		<Maintenance_Cost>0.2</Maintenance_Cost>
 
-		<Armor_Type> Armor_Space </Armor_Type>
-        	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
-		<Damage>1148</Damage>
-		<Autoresolve_Health>3692</Autoresolve_Health>
-		<Shield_Points>2700</Shield_Points>
-		<Tactical_Health>992</Tactical_Health>
-		<Shield_Refresh_Rate>224</Shield_Refresh_Rate>
-		<Energy_Capacity>3000</Energy_Capacity>
-		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+		<Armor_Type> Armor_S70 </Armor_Type>
+        <Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
+		<Damage>8750</Damage>
+		<Autoresolve_Health>51440</Autoresolve_Health>
+		<Shield_Points>34240</Shield_Points>
+		<Tactical_Health>17200</Tactical_Health>
+		<Shield_Refresh_Rate>342</Shield_Refresh_Rate>
+		<Energy_Capacity>138950</Energy_Capacity>
+		<Energy_Refresh_Rate>13895</Energy_Refresh_Rate>
 
 		<Affiliation>Rebel</Affiliation>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>3</Required_Star_Base_Level>
@@ -55,7 +55,7 @@
 		<Transport_Capacity>12</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
 		<Build_Cost_Credits>5320</Build_Cost_Credits>
-		<AI_Combat_Power>5323</AI_Combat_Power>
+		<AI_Combat_Power>2350</AI_Combat_Power>
 		<Build_Time_Seconds>51</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
@@ -68,22 +68,20 @@
 		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
 
 		<Death_Clone>Damage_Normal, Assault_Frigate_Death_Clone</Death_Clone>
-		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+		<Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1700.0</Targeting_Max_Attack_Distance>
 
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 
 		<HardPoints>
-			HP_Alliance_Assault_Frigate_00,
-			HP_Alliance_Assault_Frigate_01,
-			HP_Alliance_Assault_Frigate_02,
-			HP_Alliance_Assault_Frigate_03,
-			HP_Alliance_Assault_Frigate_04,
-			HP_Alliance_Assault_Frigate_05,
-			HP_Alliance_Assault_Frigate_06,
-			HP_Alliance_Assault_Frigate_07,
-			HP_Alliance_Assault_Frigate_Shield_Generator, 
-			HP_Alliance_Assault_Frigate_Engines
+			HP_Assault_Frigate_New_00,
+			HP_Assault_Frigate_New_01,
+			HP_Dreadnought_New_02,
+			HP_Dreadnought_New_03,
+			HP_Dreadnought_New_04,
+			HP_Dreadnought_New_05,
+			HP_Assault_Frigate_New_02,
+			HP_Assault_Frigate_New_03
 		</HardPoints>
 
 		<CategoryMask> Frigate | AntiCorvette | AntiFrigate | AntiCapital </CategoryMask>
@@ -148,49 +146,13 @@
 		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
 		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
 		<Targeting_Priority_Set>Cruiser</Targeting_Priority_Set>
-		<Lua_Script>ObjectScript_PointDefense</Lua_Script>
-
-		<!-- Non-Hero unit abilities description -->
-		<Unit_Abilities_Data SubObjectList="Yes">
-
-			<Unit_Ability>
-                <Type>LASER_DEFENSE</Type>
-                <Recharge_Seconds>30.0</Recharge_Seconds>
-                <GUI_Activated_Ability_Name> AAF_Laser_Defense </GUI_Activated_Ability_Name>
-                <Effective_Radius> 900.0 </Effective_Radius>
-                <Supports_Autofire>True</Supports_Autofire>
-				
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_POINT_DEFENCE_NAME</Alternate_Name_Text>
-                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_POINT_DEFENCE_DESCRIPTION</Alternate_Description_Text>
-           </Unit_Ability>
-        </Unit_Abilities_Data>
-
-		<Abilities SubObjectList="Yes">
-            <Laser_Defense_Ability Name="AAF_Laser_Defense">
-                <Activation_Style> User_Input </Activation_Style>
-                <Defense_Duration_In_Secs> 15.0 </Defense_Duration_In_Secs>
-                <Laser_Color>238,71,54,255</Laser_Color>
-                <Bone_Names>MuzzleB_R05, MuzzleB_R04, MuzzleB_R13, MuzzleB_R12</Bone_Names>
-                <Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
-                <Protection_Radius>900.0</Protection_Radius>
-                <Laser_Beam_Frames>2</Laser_Beam_Frames>
-                <Laser_Beam_Width>4</Laser_Beam_Width>
-                <Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
-                <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
-                <Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
-                <Recharge_Time_In_Secs>0.05</Recharge_Time_In_Secs>
-                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
-                <Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
-            </Laser_Defense_Ability>
-		</Abilities>
-		
 
 		<Encyclopedia_Text> TEXT_TOOLTIP_ASSAULT_FRIGATE</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_CRUISER</Encyclopedia_Unit_Class>
 		<Score_Cost_Credits> 5323 </Score_Cost_Credits>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>5320</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>2350</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites> </Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
@@ -210,9 +172,9 @@
 		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
 		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
 		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
-		<Scale_Factor>0.462</Scale_Factor>
+		<Scale_Factor>0.924</Scale_Factor>
 		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
-		<Max_Speed>1.714</Max_Speed>
+		<Max_Speed>0.03</Max_Speed>
 		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
 		<Max_Thrust>1</Max_Thrust>
 		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>

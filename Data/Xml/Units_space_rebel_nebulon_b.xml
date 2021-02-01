@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <Nebulon_B_Frigate_Data>
-	<SpaceUnit Name="Nebulon_B_Frigate_Gen">
+	<SpaceUnit Name="Nebulon_B_Frigate">
 		<Text_ID>TEXT_UNIT_NEBULON_FRIGATE</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
 		<GUI_Row> 0 </GUI_Row>
 		<Space_Model_Name>F_NebulonB.ALO</Space_Model_Name>
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 		<Mass>0.999</Mass>
-		<Scale_Factor>0.165</Scale_Factor>
+		<Scale_Factor>0.33</Scale_Factor>
 		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-		<Damage>246</Damage>
-		<Autoresolve_Health>1408</Autoresolve_Health>
-		<Shield_Points>960</Shield_Points>
-		<Tactical_Health>448</Tactical_Health>
-		<Shield_Refresh_Rate>96</Shield_Refresh_Rate>
-		<Energy_Capacity>3000</Energy_Capacity>
-		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+		<Damage>3170</Damage>
+		<Autoresolve_Health>20960</Autoresolve_Health>
+		<Shield_Points>15040</Shield_Points>
+		<Tactical_Health>5920</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Energy_Capacity>52640</Energy_Capacity>
+		<Energy_Refresh_Rate>5264</Energy_Refresh_Rate>
 
         	<Ranking_In_Category>6</Ranking_In_Category>
-		<Max_Speed>1.142</Max_Speed>
+		<Max_Speed>1.57</Max_Speed>
 		<Max_Rate_Of_Turn>0.7</Max_Rate_Of_Turn>
 		<MovementClass> Space </MovementClass>
 		<Space_Layer> Frigate </Space_Layer>
@@ -28,17 +28,17 @@
 		<OverrideAcceleration> .04 </OverrideAcceleration>
 		<OverrideDeceleration> .04 </OverrideDeceleration>
 
-		<Armor_Type> Armor_Space </Armor_Type>
+		<Armor_Type> Armor_S30 </Armor_Type>
         	<Shield_Armor_Type>Shield_Space</Shield_Armor_Type>
 		<Max_Thrust>1.5</Max_Thrust>
 		<Hyperspace>Yes</Hyperspace>
 		<Select_Box_Scale>250</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
-		<Ranged_Target_Z_Adjust>35.0</Ranged_Target_Z_Adjust>
+		<!--<Ranged_Target_Z_Adjust>35.0</Ranged_Target_Z_Adjust>-->
 		<Hyperspace_Speed>1.0</Hyperspace_Speed>
 		<Maintenance_Cost>0.1</Maintenance_Cost>
-		<Affiliation>Rebel</Affiliation>
-		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tech_Level>0</Tech_Level>
 		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 		<Required_Timeline>0</Required_Timeline>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
@@ -52,15 +52,15 @@
 		<Squadron_Capacity>10</Squadron_Capacity>
 		<Transport_Capacity>8</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
-		<AI_Combat_Power>1637</AI_Combat_Power>
+		<AI_Combat_Power>930</AI_Combat_Power>
 		<Build_Time_Seconds>16</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
 		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED </Behavior>
-		<SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT </SpaceBehavior>
 
-		<Space_FOW_Reveal_Range>600.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+		<Space_FOW_Reveal_Range>1300.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1300.0</Targeting_Max_Attack_Distance>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		
 		<Target_Bones> HP01, HP02, HP09, HP10 </Target_Bones>
@@ -73,13 +73,14 @@
 		<Asteroid_Damage_Hit_Particles>Medium_Damage_Space</Asteroid_Damage_Hit_Particles>
 		
 		<HardPoints>
-			HP_Nebulon_00, 
-			HP_Nebulon_01,
-			HP_Nebulon_02, 
-			HP_Nebulon_03,
-			HP_Nebulon_Shield_Generator, 
-			HP_Nebulon_Engines,
-			HP_Nebulon_Fighter_Bay
+			HP_Nebulon_New_00, 
+			HP_Nebulon_New_01,
+			HP_Nebulon_New_02, 
+			HP_Nebulon_New_03,
+			<!-- HP_Nebulon_New_04,  -->
+			<!-- HP_Nebulon_New_05, -->
+			<!-- HP_Nebulon_New_06,  -->
+			<!-- HP_Nebulon_New_07 -->
 		</HardPoints>
 
 		<CategoryMask> Frigate | AntiCorvette | AntiFighter | AntiBomber</CategoryMask>
@@ -146,50 +147,12 @@
 		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
 
 		<Build_Cost_Credits>2990</Build_Cost_Credits>
-		<Build_Initially_Locked>No</Build_Initially_Locked>
-		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
-		<Slice_Cost_Credits>2990</Slice_Cost_Credits>
 		
 		<Encyclopedia_Text> TEXT_TOOLTIP_NEBULON_FRIGATE_R</Encyclopedia_Text>
 		<Score_Cost_Credits> 1637 </Score_Cost_Credits>
 
-		<!-- Non-Hero unit abilities description -->
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
-			<Unit_Ability>
-                <Type>LASER_DEFENSE</Type>
-                <Recharge_Seconds>30.0</Recharge_Seconds>
-                <GUI_Activated_Ability_Name> Nebulon_Laser_Defense </GUI_Activated_Ability_Name>
-                <Effective_Radius> 900.0 </Effective_Radius>
-                <Supports_Autofire>True</Supports_Autofire>
-				
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_POINT_DEFENCE_NAME</Alternate_Name_Text>
-                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_POINT_DEFENCE_DESCRIPTION</Alternate_Description_Text>
-           </Unit_Ability>
-        </Unit_Abilities_Data>
-
-		<Abilities SubObjectList="Yes">
-            <Laser_Defense_Ability Name="Nebulon_Laser_Defense">
-                <Activation_Style> User_Input </Activation_Style>
-                <Defense_Duration_In_Secs> 15.0 </Defense_Duration_In_Secs>
-                <Laser_Color>238,71,54,255</Laser_Color>
-                <Bone_Names>MuzzleA_05, MuzzleA_06</Bone_Names>
-                <Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
-                <Protection_Radius>900.0</Protection_Radius>
-                <Laser_Beam_Frames>2</Laser_Beam_Frames>
-                <Laser_Beam_Width>4</Laser_Beam_Width>
-                <Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
-                <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
-                <Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
-                <Recharge_Time_In_Secs>0.16</Recharge_Time_In_Secs>
-                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
-                <Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
-            </Laser_Defense_Ability>
-		</Abilities>
-		<Lua_Script>ObjectScript_PointDefense</Lua_Script>
-
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>2990</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>930</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
@@ -200,7 +163,6 @@
 
 		<Tactical_Bribe_Cost>1637</Tactical_Bribe_Cost>
 		<Piracy_Value_Credits>1637</Piracy_Value_Credits>
-
 	</SpaceUnit>
    
      <SpaceUnit Name="Nebulon_Death_Clone">
@@ -219,79 +181,5 @@
 		<Affiliation>Rebel</Affiliation>
 		<Ship_Class>frigate</Ship_Class>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
-
-	</SpaceUnit>
-     <SpaceUnit Name="Nebulon_Empire_Death_Clone">
-		<Text_ID>TEXT_UNIT_NEBULON_FRIGATE</Text_ID>
-		<Space_Model_Name>F_NebulonB_D.ALO</Space_Model_Name>
-		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
-		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
-		<Death_Persistence_Duration> 0 </Death_Persistence_Duration>
-		<Scale_Factor>0.165</Scale_Factor>
-		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
-		<Max_Speed>1.142</Max_Speed>
-		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
-		<Max_Thrust>1</Max_Thrust>
-		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>0</Bank_Turn_Angle>
-		<Affiliation>Empire</Affiliation>
-		<Ship_Class>frigate</Ship_Class>
-		<Remove_Upon_Death>true</Remove_Upon_Death>
-
-	</SpaceUnit>
-	<SpaceUnit Name="Nebulon_B_Frigate">
-		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Gen</Variant_Of_Existing_Type>
-		<Tech_Level>0</Tech_Level>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_0>Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_0>
-		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_1>Z95_Headhunter2_Squadron, 1</Starting_Spawned_Units_Tech_1>
-		<Starting_Spawned_Units_Tech_1>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_1>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_2>Rebel_X-Wing_Squadron, 2</Starting_Spawned_Units_Tech_2>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_3>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_3>
-		<Starting_Spawned_Units_Tech_3>X-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_3>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_4>X-Wing_Squadron2, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>X-Wing_Squadron3, 1</Starting_Spawned_Units_Tech_4>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_5>X-Wing_Squadron3, 1</Starting_Spawned_Units_Tech_5>
-		<Starting_Spawned_Units_Tech_5>X-Wing_Squadron4, 1</Starting_Spawned_Units_Tech_5>
-
-	</SpaceUnit>
-	<SpaceUnit Name="Nebulon_B_Frigate_Empire">
-		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Gen</Variant_Of_Existing_Type>
-		<Affiliation>Empire</Affiliation>
-		<Tech_Level>1</Tech_Level>
-		<AI_Combat_Power>1637</AI_Combat_Power>
-		<Build_Time_Seconds>16</Build_Time_Seconds>
-		<Tactical_Build_Cost_Multiplayer>2310</Tactical_Build_Cost_Multiplayer>
-		<Population_Value>2</Population_Value>
-		<Tactical_Bribe_Cost>1637</Tactical_Bribe_Cost>
-		<Piracy_Value_Credits>1637</Piracy_Value_Credits>
-		<Encyclopedia_Text> TEXT_TOOLTIP_NEBULON_FRIGATE</Encyclopedia_Text>
-		<Score_Cost_Credits> 1637 </Score_Cost_Credits>
-		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
-		<Death_Clone>Damage_Normal, Nebulon_Empire_Death_Clone</Death_Clone>
-
-		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Nebulon</SFXEvent_Build_Complete>
-		
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
-		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_4>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_5>TIE_Avenger_Squadron, 1</Starting_Spawned_Units_Tech_5>
-		<Starting_Spawned_Units_Tech_5>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_5>
-		<!-- Set to spawn all units once and then not continue - no reserves -->
-		<Starting_Spawned_Units_Tech_6>TIE_Avenger_Squadron, 2</Starting_Spawned_Units_Tech_6>
-
 	</SpaceUnit>
 </Nebulon_B_Frigate_Data>

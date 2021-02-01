@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <SpaceUnitsFrigates>
+
+	<SpaceUnit Name="Victory_Destroyer_No_Fighters">
+		<Variant_Of_Existing_Type>Victory_Destroyer</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	
 	<SpaceUnit Name="Pirate_Frigate">
 		<Text_ID>TEXT_UNIT_PIRATE_FRIGATE</Text_ID>
 		<Encyclopedia_Good_Against> Corellian_Corvette Crusader_Gunship Tartan_Patrol_Cruiser </Encyclopedia_Good_Against>
